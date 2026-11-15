@@ -7,37 +7,31 @@
     <title>View Problem</title>
     <link rel="stylesheet" href="../styles/home-style.css">
     <link rel="stylesheet" href="../styles/problem-pages-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar">
+    <header class="navbar">
         <div class="logo">
-            <div class="logo-bars">
-                <span class="bar-left"></span>
-                <span class="bar-middle"></span>
-                <span class="bar-right"></span>
-            </div>
-
-            <span class="logo-text"><span class="highlight-letter">F</span>ODECORSES</span>
+            <i class="fa-solid fa-code"></i>
+            <span>FodeCorses</span>
         </div>
-
-        <ul class="nav-links">
-            <li><a href="../pages/home.html"> Problemset </a></li>
-            <li><a href="../pages/submission.html">My Submissions</a></li>
-            <li><a href="../pages/Standings.html">Standings</a></li>
-            <li><a href="../pages/submission.html">Status</a></li>
-        </ul>
-
+        <nav class="nav-links">
+            <a href="home.html" class="active"><i class="fa-solid fa-house"></i> Problemset</a>
+            <a href="submission.html"><i class="fa-solid fa-trophy"></i> My Submissions</a>
+            <a href="Standings.html"><i class="fa-solid fa-chart-bar"></i> Standings</a>
+            <a href="submission.html"><i class="fa-solid fa-circle-info"></i> Status</a>
+        </nav>
         <div class="auth-buttons">
-            <button>Login</button>
-            <button>Register</button>
+            <a href="login.html" class="btn-login"><i class="fa-solid fa-user"></i> Login</a>
+            <a href="signup.html" class="btn-register"><i class="fa-solid fa-user-plus"></i> Register</a>
         </div>
+    </header>
 
-    </nav>
     <main class="container">
         <header class="page-header" style="text-align: center;">
-            <p>Problem ID: 12345</p>
+            <p>Problem ID: #12345</p>
             <h1>Sum</h1>
         </header>
         <section class="info-grid">
@@ -95,7 +89,7 @@
 
     </main>
     <footer class="footer">
-        CODELAB &copy; 2026 — Programming Contest Platform
+        © 2026 Fodecorses. All rights reserved.
     </footer>
 </body>
 

@@ -1,13 +1,3 @@
-:root {
-  --bg-main: #010736;
-  --bg-card: #0D1C42;
-  --text-main: #FCF1D0;
-  --text-muted: #a79f88;
-  --header-bg: #22396F;
-  --header-text: #FCF1D0;
-  --border-color: rgba(255, 255, 255, 0.08);
-  --hover-bg: #172d5e;
-}
 
 *{
   box-sizing: border-box;
@@ -18,8 +8,12 @@
 
 
 body {
-  background-color: var(--bg-main);
-  color: var(--text-main);
+    background-color: #f8f9fa;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .Standings {
@@ -53,7 +47,7 @@ thead th {
 }
 tbody td.username,
 tbody td:nth-child(2) {
-  color: #ffffff;
+  color: #000000;
   font-weight: 600;
 }
 

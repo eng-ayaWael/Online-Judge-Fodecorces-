@@ -1,4 +1,3 @@
-
 /* ===== General ===== */
 * {
     margin: 0;
@@ -6,31 +5,16 @@
     box-sizing: border-box;
 }
 
-:root {
-    --bg: #0b1120;
-    --card: #111b2e;
-    --input: #0d1729;
-    --border: #334665;
-    --text: #f4f7ff;
-    --muted: #9aacc9;
-    --blue: #3478f6;
-    --purple: #6554f5;
-}
-
 body {
+    background-color: whitesmoke;
+    color: #333;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
     padding: 30px 16px;
-    background:
-        radial-gradient(
-            circle at top left,
-            #192b4c 0%,
-            transparent 40%
-        ),
-        var(--bg);
-    color: var(--text);
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
@@ -39,14 +23,12 @@ body {
     width: 100%;
     max-width: 520px;
     padding: 42px;
-    background: linear-gradient(
-        145deg,
-        rgba(22, 34, 56, 0.98),
-        rgba(15, 24, 42, 0.98)
-    );
-    border: 1px solid var(--border);
+    background: linear-gradient(145deg,
+            rgba(250, 246, 246, 0.977),
+            rgb(255, 255, 255));
+    border: 1px solid grey;
     border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 60px rgba(grey, 0.3);
 }
 
 .signup-card {
@@ -58,7 +40,7 @@ body {
     text-align: center;
     font-size: 42px;
     font-weight: 800;
-    color: #4b8cff;
+    color: #6c72ff;
     margin-bottom: 8px;
     letter-spacing: -3px;
 }
@@ -113,8 +95,8 @@ body {
 .form-group input {
     width: 100%;
     padding: 15px 16px;
-    background: var(--input);
-    border: 1px solid var(--border);
+    background: whitesmoke;
+    border: 1px dotted grey;
     border-radius: 10px;
     color: var(--text);
     font-size: 15px;
@@ -138,11 +120,7 @@ body {
     margin-top: 5px;
     border: none;
     border-radius: 11px;
-    background: linear-gradient(
-        100deg,
-        var(--blue),
-        var(--purple)
-    );
+    background:#6c72ff;
     color: white;
     font-size: 17px;
     font-weight: 700;
