@@ -1,0 +1,57 @@
+Database Scenario: 
+The Fodecorces Online Judge is a web-based platform that allows users to solve 
+programming problems, submit source code, receive evaluation results, and track their 
+progress and statistics. 
+
+1. Users and Roles 
+Users can register using a unique Handle, Email, and Password. The system stores 
+passwords securely using hashing and records the registration date and profile picture. 
+Handles cannot be changed after registration, and both Handles and Emails must be 
+unique. Each user has exactly one role: User, Admin, or Problem Setter. The Admin can 
+suspend or ban user accounts. 
+
+2. Problems 
+The Admin and Problem Setter can add, edit, and delete programming problems, while 
+regular users can view problems and submit solutions. Each problem has a unique 
+Problem ID, Title, Statement, Input Description, Output Description, Constraints, Sample 
+Tests, Difficulty Level, Time Limit, and Memory Limit. Each problem has exactly one 
+author, who may create multiple problems. 
+
+3. Problem Tags 
+Each tag has a unique identifier and name. A problem can have multiple tags, and each 
+tag can be associated with multiple problems, such as DP, Greedy, and Graphs. 
+
+4. Submissions 
+Users can submit solutions written in C++ .Each submission receives a unique, 
+automatically increasing Submission ID. The system records the submitting user, 
+problem, submission date and time, verdict, execution time, and memory usage. Each 
+submission belongs to exactly one user and one problem. 
+
+5. Judge Engine and Verdicts 
+The Judge Engine compiles and executes submitted source code against the problem's 
+test cases and records the final evaluation result. Supported verdicts are Accepted, 
+Wrong Answer, Time Limit Exceeded, Memory Limit Exceeded, Runtime Error, and 
+Compilation Error. Pending and Running may be used as temporary statuses while a 
+submission is being evaluated. 
+
+6. Submission Pages 
+The My Submissions page displays all submissions made by the currently logged-in 
+user. The All Submissions page displays submissions from all users. All users can view 
+submission details and source code, and the system supports filtering submissions. 
+
+7. Problem Set 
+The Problem Set page displays each problem's title, difficulty level, time limit, memory 
+limit, number of attempts, number of accepted submissions, acceptance rate, and 
+whether the current user has solved the problem. 
+
+8. User Profiles and Statistics 
+Each user has a public profile containing their account information and statistics, 
+including the number of solved problems, total submissions, and solved problems by 
+difficulty level. All users can view other users' profiles and statistics. A problem is 
+considered solved by a user if the user has at least one Accepted submission for that 
+problem. 
+
+9. Administration 
+The Admin manages user accounts, problems, tags, and problem sheets, and controls 
+account status and administrative permissions. Regular users cannot add, edit, or 
+delete problems or create problem sheets. 
