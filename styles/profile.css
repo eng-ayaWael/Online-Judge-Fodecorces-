@@ -1,0 +1,377 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f9fafc;
+    color: #171923;
+    line-height: 1.5;
+}
+
+/* Main Profile Container */
+.profile-container {
+    width: min(1040px, calc(100% - 48px));
+    margin: 28px auto 52px;
+}
+
+/* Hero Card */
+.profile-hero {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 26px 30px;
+    background-color: #ffffff;
+    border: 1px solid #eef0f4;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(15, 23, 42, 0.025);
+}
+
+.profile-avatar {
+    width: 82px;
+    height: 82px;
+    flex: 0 0 82px;
+    display: grid;
+    place-items: center;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #6d74ff, #8a90ff);
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1;
+    box-shadow: 0 8px 18px rgba(109, 116, 255, 0.22);
+}
+
+.profile-heading {
+    flex: 1;
+    min-width: 0;
+}
+
+.profile-eyebrow,
+.panel-eyebrow {
+    color: #9aa0ae;
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.profile-heading h1 {
+    color: #171923;
+    font-size: clamp(1.45rem, 2.5vw, 1.85rem);
+    font-weight: 800;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+}
+
+.profile-handle {
+    color: #8b91a0;
+    font-size: 0.82rem;
+    margin-top: 3px;
+}
+
+.profile-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.profile-role,
+.profile-joined {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.74rem;
+    font-weight: 600;
+}
+
+.profile-role {
+    background-color: #eef0ff;
+    color: #5b62d6;
+}
+
+.profile-joined {
+    background-color: #f4f5f8;
+    color: #5f6677;
+}
+
+.profile-rating-block {
+    min-width: 110px;
+    padding-left: 24px;
+    border-left: 1px solid #eef0f4;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    color: #8f95a5;
+    font-size: 0.78rem;
+}
+
+.profile-rating-block strong {
+    color: #1e2130;
+    font-size: 1.65rem;
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+/* Stats Grid */
+.profile-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin: 16px 0;
+}
+
+.profile-stat-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px 20px;
+    border: 1px solid #eef0f4;
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.02);
+}
+
+.stat-icon {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 11px;
+    font-size: 1rem;
+}
+
+.solved-icon {
+    background-color: #e9f8ef;
+    color: #249b5e;
+}
+
+.submissions-icon {
+    background-color: #edf3ff;
+    color: #4674d6;
+}
+
+.accepted-icon {
+    background-color: #f2edff;
+    color: #7856cc;
+}
+
+.profile-stat-card p {
+    color: #8d93a2;
+    font-size: 0.76rem;
+    margin-bottom: 2px;
+}
+
+.profile-stat-card strong {
+    color: #1c1f2e;
+    font-size: 1.35rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+/* Main Grid & Panels */
+.profile-main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.profile-panel {
+    padding: 22px 26px;
+    background-color: #ffffff;
+    border: 1px solid #eef0f4;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.02);
+    min-width: 0;
+}
+
+.panel-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.recent-heading {
+    align-items: center;
+}
+
+.panel-heading h2 {
+    color: #232636;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.panel-heading-icon {
+    color: #9ba1b0;
+    font-size: 1.05rem;
+    margin-top: 4px;
+}
+
+/* Difficulty Progress */
+.difficulty-row {
+    margin: 14px 0;
+}
+
+.difficulty-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    color: #5b6274;
+    font-size: 0.78rem;
+}
+
+.difficulty-label strong {
+    color: #272b3b;
+    font-weight: 700;
+}
+
+.difficulty-progress {
+    height: 6px;
+    overflow: hidden;
+    border-radius: 99px;
+    background-color: #f1f2f6;
+}
+
+.difficulty-progress-fill {
+    display: block;
+    height: 100%;
+    width: 0;
+    border-radius: inherit;
+}
+
+.difficulty-progress-fill.easy {
+    background-color: #42b883;
+}
+
+.difficulty-progress-fill.medium {
+    background-color: #e7a83e;
+}
+
+.difficulty-progress-fill.hard {
+    background-color: #e26c72;
+}
+
+.profile-note {
+    margin-top: 16px;
+    color: #9ca2b0;
+    font-size: 0.72rem;
+}
+
+/* Recent Submissions */
+.recent-panel {
+    margin-top: 16px;
+}
+
+.profile-view-all {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #5e65df;
+    text-decoration: none;
+    font-size: 0.78rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.profile-view-all:hover {
+    color: #454cc4;
+}
+
+.profile-table-scroll {
+    overflow-x: auto;
+}
+
+.profile-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 520px;
+}
+
+.profile-table th,
+.profile-table td {
+    padding: 11px 14px;
+    text-align: left;
+    border-bottom: 1px solid #f1f2f6;
+    font-size: 0.78rem;
+}
+
+.profile-table th {
+    color: #8f95a4;
+    font-weight: 700;
+    background-color: #f8f9fb;
+}
+
+.profile-table td {
+    color: #636979;
+}
+
+.profile-table tr:last-child td {
+    border-bottom: 0;
+}
+
+.empty-submissions {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: #8f95a4;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .profile-stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .navbar {
+        padding: 12px 16px;
+        flex-wrap: wrap;
+    }
+
+    .profile-container {
+        width: calc(100% - 24px);
+        margin-top: 20px;
+    }
+
+    .profile-hero {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 20px;
+        gap: 14px;
+    }
+
+    .profile-avatar {
+        width: 68px;
+        height: 68px;
+        flex: 0 0 68px;
+        border-radius: 15px;
+        font-size: 26px;
+    }
+
+    .profile-heading {
+        flex-basis: calc(100% - 84px);
+    }
+
+    .profile-rating-block {
+        width: 100%;
+        border-left: 0;
+        border-top: 1px solid #eef0f4;
+        padding: 12px 0 0;
+    }
+
+    .profile-panel {
+        padding: 18px;
+    }
+}
