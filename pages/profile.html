@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Fodecorses</title>
+    <link rel="stylesheet" href="../styles/profile.css">
+    <link rel="stylesheet" href="../styles/home-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+            <span>FodeCorses</span>
+        </div>
+        <nav class="nav-links">
+            <a href="home.html" class="active"><i class="fa-solid fa-house"></i> Problemset</a>
+            <a href="submission.html"><i class="fa-solid fa-trophy"></i> Submissions</a>
+            <a href="Standings.html"><i class="fa-solid fa-chart-bar"></i> Standings</a>
+            <a href="profile.html"><i class="fa-solid fa-circle-user"></i> Profile</a>
+        </nav>
+
+        <div class="auth-buttons">
+            <a href="login.html" class="btn-login"><i class="fa-solid fa-user"></i> Login</a>
+            <a href="signup.html" class="btn-register"><i class="fa-solid fa-user-plus"></i> Register</a>
+        </div>
+    </header>
+
+
+    <main class="profile-container">
+        <section class="profile-hero">
+            <div class="profile-avatar">_</div>
+
+            <div class="profile-heading">
+                <p class="profile-eyebrow">FODECORSES MEMBER</p>
+                <h1>_K_I_R_A_111</h1>
+                <p class="profile-handle">@_K_I_R_A_111</p>
+                <div class="profile-badges">
+                    <span class="profile-role"><i class="fa-solid fa-shield-halved"></i> User</span>
+                    <span class="profile-joined"><i class="fa-regular fa-calendar"></i> Joined Nov 19, 2026</span>
+                </div>
+            </div>
+
+            <div class="profile-rating-block">
+                <span>Rating</span>
+                <strong>0</strong>
+            </div>
+        </section>
+
+        <section class="profile-stats-grid">
+            <article class="profile-stat-card">
+                <div class="stat-icon solved-icon"><i class="fa-solid fa-circle-check"></i></div>
+                <div>
+                    <p>Solved Problems</p>
+                    <strong>0</strong>
+                </div>
+            </article>
+
+            <article class="profile-stat-card">
+                <div class="stat-icon submissions-icon"><i class="fa-solid fa-paper-plane"></i></div>
+                <div>
+                    <p>Total Submissions</p>
+                    <strong>0</strong>
+                </div>
+            </article>
+
+            <article class="profile-stat-card">
+                <div class="stat-icon accepted-icon"><i class="fa-solid fa-check-double"></i></div>
+                <div>
+                    <p>Accepted Submissions</p>
+                    <strong>0</strong>
+                </div>
+            </article>
+        </section>
+
+        <section class="profile-main-grid">
+            <article class="profile-panel difficulty-panel">
+                <div class="panel-heading">
+                    <div>
+                        <p class="panel-eyebrow">PROGRESS</p>
+                        <h2>Problems by Difficulty</h2>
+                    </div>
+                    <i class="fa-solid fa-chart-column panel-heading-icon"></i>
+                </div>
+
+                <div class="difficulty-row">
+                    <div class="difficulty-label"><span>Easy</span><strong>0</strong></div>
+                    <div class="difficulty-progress"><span class="difficulty-progress-fill easy"></span></div>
+                </div>
+
+                <div class="difficulty-row">
+                    <div class="difficulty-label"><span>Medium</span><strong>0</strong></div>
+                    <div class="difficulty-progress"><span class="difficulty-progress-fill medium"></span></div>
+                </div>
+
+                <div class="difficulty-row">
+                    <div class="difficulty-label"><span>Hard</span><strong>0</strong></div>
+                    <div class="difficulty-progress"><span class="difficulty-progress-fill hard"></span></div>
+                </div>
+
+                <p class="profile-note">A problem counts as solved after at least one Accepted submission.</p>
+            </article>
+        </section>
+
+        <section class="profile-panel recent-panel">
+            <div class="panel-heading recent-heading">
+                <div>
+                    <p class="panel-eyebrow">ACTIVITY</p>
+                    <h2>Recent Submissions</h2>
+                </div>
+                <a href="submission.html" class="profile-view-all">View all <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="profile-table-scroll">
+                <table class="profile-table">
+                    <thead>
+                        <tr>
+                            <th>Problem</th>
+                            <th>Verdict</th>
+                            <th>Time</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="4" class="empty-submissions">No submissions yet.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

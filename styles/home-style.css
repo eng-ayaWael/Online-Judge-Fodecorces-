@@ -50,6 +50,11 @@ body {
     gap: 25px;
 }
 
+.nav-links a:hover {
+    background-color: #f3f4f8;
+    color: #171923;
+}
+
 .nav-links a {
     text-decoration: none;
     color: #666;
@@ -101,6 +106,10 @@ body {
 
 .btn-login:hover {
     background: #e9ecef;
+}
+
+.btn-my-profile:hover {
+    background-color: #f8f9fb;
 }
 
 .btn-register:hover {
